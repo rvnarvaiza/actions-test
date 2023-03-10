@@ -19,4 +19,10 @@ describe('AppController', () => {
       expect(appController.getHello()).toBe('Hello World!');
     });
   });
+
+  describe('getSum', () => {
+    it('it should return 6', () => {
+      expect(appController.getSum(3, 3)).toEqual(6);
+    });
+  });
 });

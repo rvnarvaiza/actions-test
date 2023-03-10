@@ -15,6 +15,6 @@ export class AppController {
     @Query('num_1', ParseIntPipe) num1: number,
     @Query('num_2', ParseIntPipe) num2: number,
   ) {
-    return num1 + num2;
+    return num1 + num2 + 2;
   }
 }
